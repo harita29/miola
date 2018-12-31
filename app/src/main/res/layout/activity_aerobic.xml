@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.sfwhf1.AerobicActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="287dp"
+            android:layout_height="130dp"
+            app:srcCompat="@drawable/aerobics"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/walk"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintVertical_bias="0.714"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="ContentDescription"
+            app:layout_constraintHorizontal_bias="0.506"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageButton
+            android:id="@+id/walk"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="50dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/imageView2"
+            android:background="@drawable/walkingbtn" />
+
+        <ImageButton
+            android:id="@+id/run"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="50dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/walk"
+            android:background="@drawable/runningbtn"  />
+
+        <ImageButton
+            android:id="@+id/swim"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="50dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/run"
+            android:background="@drawable/swimmingbtn" />
+
+        <ImageButton
+            android:id="@+id/bike"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="50dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/swim"
+            android:background="@drawable/bicyclingbtn" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/workoutmenu"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/bike" />
+
+    </RelativeLayout>
+
+</ScrollView>

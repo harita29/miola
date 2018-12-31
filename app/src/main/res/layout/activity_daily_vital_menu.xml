@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.example.android.sfwhf1.DailyVitalMenu">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/bodyTemp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bodytemperature" />
+
+        <ImageButton
+            android:id="@+id/bloodPress"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/bodyTemp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bloodpressurebtn" />
+
+        <ImageButton
+            android:id="@+id/heartRate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/bloodPress"
+            android:layout_margin="10dp"
+            android:background="@drawable/heartrate" />
+
+        <ImageButton
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/heartRate"
+            android:layout_margin="10dp"
+            android:background="@drawable/weight" />
+
+        <ImageButton
+            android:id="@+id/goal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/weight"
+            android:layout_margin="10dp"
+            android:background="@drawable/dailygoal" />
+
+        <ImageButton
+            android:id="@+id/miLog"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/goal"
+            android:layout_margin="10dp"
+            android:background="@drawable/milog2" />
+
+        <TextView
+            android:id="@+id/backMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/miLog"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="BACK"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>

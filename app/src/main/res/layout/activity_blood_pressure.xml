@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.example.android.sfwhf1.BloodPressure">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/bloodPressImage"
+            android:layout_width="@android:dimen/thumbnail_width"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/bloodpressure" />
+
+        <EditText
+            android:id="@+id/high_body_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/bloodPressImage"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Top Number (EX120)"
+            android:textSize="20dp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/low_body_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/high_body_pressure"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:textSize="20dp"
+            android:hint="Bottom Number (EX80)"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/low_body_pressure"
+            android:layout_alignEnd="@+id/bloodPressImage" />
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/low_body_pressure" />
+        <ImageButton
+            android:id="@+id/backMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/next"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vitalmenu" />
+
+
+    </RelativeLayout>
+</ScrollView>

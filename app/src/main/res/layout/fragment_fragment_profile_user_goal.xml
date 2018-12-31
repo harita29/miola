@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_activity" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/activityLevelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrow_down" />
+
+    </RelativeLayout>
+
+    <!--<include
+        android:id="@+id/activityLevelEditBox"
+        layout="@layout/editbox_form_design"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp" />-->
+
+
+    <!--<include
+        android:id="@+id/goalEditBox"
+        layout="@layout/editbox_form_design"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/goalSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_arrow_down" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/goalWeightArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/goalWeightEditBox"
+            layout="@layout/editbox_form_design"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/weightSpinnerArea"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/weightSelectionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_arrow_down" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<EditText
+        android:id="@+id/activityLevelEditBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:hint="Enter your activity level" />-->
+
+    <!--<EditText
+        android:id="@+id/goalEditBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="Enter your goal" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <!--
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="SKIP" />
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0" />-->
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:fontFamily="sans-serif-medium"
+            android:text="SUBMIT" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#e60000</color>
+    <color name="blue">#0099ff</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#AAFF00</color>
+    <color name="black">#000000</color>
+    <color name="grey">#e6e6e6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkblue">#0000ff</color>
+    <!-- Material EditBox configuration Start-->
+    <color name="editBox_primary">#5aa663</color> <!--used for EditBox-->
+    <color name="editBox_primary_dark">#407747</color> <!--used for EditBox-->
+    <color name="editBox_accent">#5aa663</color> <!--used for EditBox-->
+    <!-- Material EditBox configuration End-->
+
+
+    <color name="colorLightBlue">#03bbf6</color>
+
+</resources>

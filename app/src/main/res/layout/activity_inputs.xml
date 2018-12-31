@@ -1,0 +1,107 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linearLayout"
+    android:background="@color/grey"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/foodItemManualInput"
+            android:text="List of Food Items:"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:maxLines="100"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true">
+
+        </ListView>
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_width="385dp"
+            android:layout_height="145dp"
+            android:background="@drawable/shape"
+            android:isScrollContainer="false"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/listView1"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:id="@+id/foodItemManualInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/listView2"
+            android:hint="Enter Item Name"
+            android:textSize="20dp"
+            android:inputType="textPersonName"
+            android:layout_alignStart="@+id/typeCalorieInputManual"
+            android:layout_toStartOf="@+id/addmanualinput" />
+
+
+        <EditText
+            android:id="@+id/typeCalorieInputManual"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:hint="Enter Calorie Amount"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/foodItemManualInput"
+            android:layout_marginStart="12dp"
+            android:ems="10"
+            android:textSize="20dp"
+            android:inputType="number"/>
+
+        <ImageButton
+            android:id="@+id/addmanualinput"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignTop="@+id/typeCalorieInputManual"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/typeCalorieInputManual"
+            android:background="@drawable/add"
+             />
+
+
+        <ImageButton
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/submitsmall"
+            android:layout_below="@+id/typeCalorieInputManual"
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/submit"
+            android:layout_alignBottom="@+id/submit"
+            android:layout_alignEnd="@+id/submit"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:hint="Total = 0"
+            android:textSize="20dp"
+            android:isScrollContainer="false"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</ScrollView>

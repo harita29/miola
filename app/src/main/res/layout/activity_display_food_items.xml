@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.example.android.sfwhf1.DisplayFoodItems"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/foodItem"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:isScrollContainer="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/showfoodCalories"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/foodItem"
+            android:layout_margin="10dp"
+            android:inputType="textMultiLine"
+            android:textAlignment="viewStart"
+            android:textSize="25dp" />
+        <ImageButton
+            android:id="@+id/intakesMenu"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/showfoodCalories"
+            android:layout_margin="10dp"
+            android:background="@drawable/intakesmenusmall" />
+
+        <ImageButton
+            android:id="@+id/backMilog"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/showfoodCalories"
+            android:layout_margin="10dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/milogsmall" />
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,126 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Material EditBox configuration Start-->
+    <style name="bg_materialEditText" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/editBox_primary</item>
+        <item name="colorPrimaryDark">@color/editBox_primary_dark</item>
+        <item name="colorAccent">@color/editBox_accent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Material EditBox configuration End-->
+
+    <!-- Image Selection Start-->
+
+    <style name="ImageSourceDialogStyle">
+        <item name="android:windowAnimationStyle">@style/ImageSourceDialogAnimStyle</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="ImageSourceDialogAnimStyle">
+        <item name="android:windowEnterAnimation">@anim/slide_up_anim</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down_anim</item>
+    </style>
+
+
+    <style name="MenuButton" parent="android:Widget.Button">
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <color name="light_purple">#DAB0E4</color>
+    <color name="dark_purple">#6A1080</color>
+    <color name="light_blue">#48BDA6</color>
+    <color name="dark_blue">#05614F</color>
+    <color name="light_yellow">#FFD179</color>
+    <color name="dark_yellow">#9A6500</color>
+    <color name="dark_grey">#555555</color>
+    <color name="light_grey">#bfbfbf</color>
+
+    <style name="ScoreText" parent="android:TextAppearance.Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="GreyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background"  tools:ignore="NewApi">@color/dark_grey</item>
+        <item name="background">@color/dark_grey</item>
+    </style>
+
+    <style name="GreyActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle"   tools:ignore="NewApi">@style/GreyActionBar</item>
+        <item name="actionBarStyle">@style/GreyActionBar</item>
+    </style>
+
+    <style name="SettingsInfoText" parent="android:TextAppearance.Widget.TextView">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="SettingsLabelText" parent="android:TextAppearance.Widget.TextView">
+        <item name="android:textColor">#555555</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="YellowActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background"  tools:ignore="NewApi">@color/dark_yellow</item>
+        <item name="background">@color/dark_yellow</item>
+    </style>
+
+    <style name="YellowActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle"   tools:ignore="NewApi">@style/YellowActionBar</item>
+        <item name="actionBarStyle">@style/YellowActionBar</item>
+    </style>
+
+    <style name="BlueActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background"  tools:ignore="NewApi">@color/dark_blue</item>
+        <item name="background">@color/dark_blue</item>
+    </style>
+
+    <style name="BlueActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle"   tools:ignore="NewApi">@style/BlueActionBar</item>
+        <item name="actionBarStyle">@style/BlueActionBar</item>
+    </style>
+
+
+    <string name="calendar">Calendar</string>
+
+
+
+    <!-- Image Selection End-->
+</resources>

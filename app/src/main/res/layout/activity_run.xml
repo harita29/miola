@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.example.android.sfwhf1.RunActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/r_imageView"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/runimage"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="ContentDescription"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintBottom_toTopOf="@+id/r_duration"
+            tools:layout_editor_absoluteX="42dp" />
+
+        <EditText
+            android:id="@+id/r_duration"
+            android:layout_width="296dp"
+            android:layout_height="44dp"
+            android:textSize="20dp"
+            android:hint="Enter Duration in min"
+            android:inputType="number"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@id/r_imageView"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintBottom_toTopOf="@+id/r_submit" />
+
+        <ImageButton
+            android:id="@+id/r_submit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="50dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/r_duration"
+            android:background="@drawable/submit" />
+
+        <TextView
+            android:id="@+id/r_calView"
+            android:layout_width="293dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="20dp"
+            android:layout_below="@id/r_submit"
+            android:layout_centerHorizontal="true"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/aerobicsmenu"
+            android:layout_below="@+id/r_calView"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</ScrollView>

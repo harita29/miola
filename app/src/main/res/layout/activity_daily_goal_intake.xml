@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context="com.example.android.sfwhf1.DailyGoalIntake">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/intake"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/intakepic"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/backMain"
+            android:layout_marginEnd="13dp" />
+        <TextView
+            android:id="@+id/explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Today, I will intake ..."
+            android:layout_below="@+id/intake"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="EX: 1500 (calories)"
+            android:layout_below="@id/explain"
+            android:inputType="number"
+            android:textSize="40sp" />
+
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/calories"
+            android:background="@drawable/submit" />
+
+        <ImageButton
+            android:id="@+id/backMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/next"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dailygoalsmall" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.sfwhf1.BikeActivity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="289dp"
+        android:layout_height="205dp"
+        app:srcCompat="@drawable/cycling"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        tools:ignore="ContentDescription"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/b_duration"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:hint="Enter Duration in min"
+        android:inputType="number"
+        android:layout_below="@id/imageView"
+        android:layout_marginBottom="16dp" />
+
+
+    <ImageButton
+        android:id="@+id/b_submit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/b_duration"
+        android:background="@drawable/submit" />
+
+    <TextView
+        android:id="@+id/b_calView"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:layout_below="@id/b_submit"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/aerobicsmenu"
+        android:layout_below="@+id/b_calView"
+        android:layout_centerInParent="true" />
+
+
+
+
+</RelativeLayout>
+</ScrollView>

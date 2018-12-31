@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.sfwhf1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/miola"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon"
+        >
+        <activity android:name=".CopyRight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Signup" />
+        <activity android:name=".Login" />
+        <activity android:name=".Main" />
+        <activity android:name=".UserProfile" />
+        <activity
+            android:name=".WorkOutTypeActivity"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".Inputs"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".DisplayCalendar"
+            android:parentActivityName=".Main" />
+        <activity android:name=".ViewActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".bodyTemp"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".heartRate"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".weight"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".BloodPressure"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".DailyVitalMenu"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".MiLog"
+            android:parentActivityName=".Main" />
+        <activity android:name=".UserProfileActivity" />
+        <activity
+            android:name=".DailyGoalAnother"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".DailyGoalFitness"
+            android:parentActivityName=".Main" />
+        <activity android:name=".DailyGoalIntake" />
+        <activity
+            android:name=".DailyGoal"
+            android:parentActivityName=".Main" />
+        <activity android:name=".MainPost" />
+        <activity android:name=".Welcom" />
+        <activity
+            android:name=".milogMenu"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".WalkActivity"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".RunActivity"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".BikeActivity"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".SwimActivity"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".AerobicActivity"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".StrengthActivity"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".CrunchActivity"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".WeightLiftingActivity"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".PushupActivity"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".WorkoutCalender"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".WorkoutReport"
+            android:parentActivityName=".Main" />
+        <activity
+            android:name=".DisplayFoodItems"
+            android:parentActivityName=".Main"></activity>
+        <activity android:name=".DailyVitalCalendar"></activity>
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameScreenActivity"
+            android:label="@string/title_activity_game_screen"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            android:parentActivityName=".MainMenuActivity" >
+        </activity>
+
+        <activity
+            android:name=".HighScoresActivity"
+            android:label="@string/title_activity_high_scores"
+            android:theme="@style/YellowActionBarTheme">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calendar"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CalendarView
+        android:id="@+id/w_calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:dateTextAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:weekDayTextAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">MiOLa</string>
+    <string name="title_activity_login">Login</string>
+
+
+    <array name="w_units">
+        <item>lb</item>
+        <item>kg</item>
+    </array>
+    <array name="h_units">
+        <item>ft</item>
+        <item>cm</item>
+    </array>
+    <array name="gender">
+        <item></item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Undifined</item>
+    </array>
+    <string name="title_activity_daily_vital">daily_vital</string>
+    <string name="title_activity_location">Map</string>
+    <string name="back">Back</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="high_ex_120">High(ex:120)</string>
+    <string name="low_ex_80">Low(ex:80)</string>
+    <string name="submit">Submit</string>
+    <string name="weight">Weight</string>
+    <string name="per_min">per min</string>
+    <string name="reset">We have sent you instructions to rest your password. Please check your email.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="game_title">Memory Game</string>
+    <string name="new_game">New Game</string>
+    <string name="settings">Settings</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="high_scores">High Scores</string>
+    <string name="title_activity_game_screen">Memory Game</string>
+    <string name="easy_text">Easy (4x4) -> Must complete game within 10 seconds to gain 2 points</string>
+    <string name="medium_text">Medium (6x6) -> Must complete game within 30 seconds to gain 2 points</string>
+    <string name="hard_text">Hard (6x7) -> Must complete game within 60 seconds to gain 2 points</string>
+    <string name="title_activity_tutorial">Tutorial</string>
+    <string name="find_pairs">Find pairs!</string>
+    <string name="go_fast_text">Race the clock!</string>
+    <string name="progress_text">See your high scores!</string>
+    <string name="tutorial_label_play">Play</string>
+    <string name="tutorial_label_speed">Speed</string>
+    <string name="tutorial_label_scores">Scores</string>
+    <string name="create_profile">To begin:</string>
+    <string name="start">Start</string>
+    <string name="tutorial_label_start">Start!</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="gender_label">Gender</string>
+    <string name="age_label">Age</string>
+    <string name="name_label">Name</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="edit_age_hint">Enter your age</string>
+    <string name="female_radio_text">Female</string>
+    <string name="male_radio_text">Male</string>
+    <string name="save_btn">Save</string>
+    <string name="title_activity_high_scores">High Scores</string>
+    <string name="hs_easy">Easy</string>
+    <string name="hs_medium">Medium</string>
+    <string name="hs_hard">Hard</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_clear_scores">Clear</string>
+    <string name="all_text">All</string>
+    <string name="hs_clear_dialog_title">Choose scores to clear:</string>
+    <string name="clear_button">Clear</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="play_again">Play Again</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="change_usr_btn">Change User</string>
+    <string name="choose_difficulty">Choose your difficulty!</string>
+    <string name="tutorial_label_difficulty">Difficulty</string>
+    <string name="create_profile_btn">Create your profile</string>
+</resources>

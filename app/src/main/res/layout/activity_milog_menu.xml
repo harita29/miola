@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.example.android.sfwhf1.milogMenu">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/vitalBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/vitallog" />
+
+        <ImageButton
+            android:id="@+id/intakeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/vitalBtn"
+            android:background="@drawable/intakebtn" />
+
+        <ImageButton
+            android:id="@+id/workoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/intakeBtn"
+            android:background="@drawable/workoutlog" />
+
+        <TextView
+            android:id="@+id/totalCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/workoutBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Total Calories For Today Is: "
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/BMRshowName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalCalories"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="BMR: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/BMRshowData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalCalories"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:layout_toEndOf="@+id/BMRshowName"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/burntCalsShowName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BMRshowName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="Burnt Calories: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/burntCalsShowData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BMRshowName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:layout_toEndOf="@+id/burntCalsShowName"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/intakeCalShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/burntCalsShowName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="Intake Calories: "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/intakeCalData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/burntCalsShowData"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:layout_toEndOf="@+id/intakeCalShow"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/totalDayCalShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/intakeCalShow"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="Today's Calorie: "
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/totalDayCalData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/intakeCalShow"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:layout_toEndOf="@+id/totalDayCalShow"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/totalDayCalData"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="BACK"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>

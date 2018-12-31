@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context="com.example.android.sfwhf1.DailyGoalAnother">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/goal"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@drawable/anothericon"
+    android:gravity="center_vertical"
+    android:layout_marginTop="20dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/goal"
+            android:ems="10"
+            android:hint="Please create your own goal."
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/enter"
+            android:background="@drawable/submit"/>
+
+        <ImageButton
+            android:id="@+id/backMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/next"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dailygoalsmall" />
+    </RelativeLayout>
+</ScrollView>

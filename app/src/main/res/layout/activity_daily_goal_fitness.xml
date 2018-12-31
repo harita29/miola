@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.example.android.sfwhf1.DailyGoalFitness"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/walking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Walking"
+                android:layout_below="@+id/radioGroup"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/running"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Running"
+                android:layout_below="@+id/walking"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/swiming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Swiming"
+                android:layout_below="@+id/running"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/pushUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Push Up"
+                android:layout_below="@+id/swim"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/burnCal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Burning Calories"
+                android:layout_below="@+id/pushUp"
+                android:textSize="25sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Amount: EX) 60 mins, 30 times"
+            android:layout_below="@+id/radioGroup"
+            android:inputType="text"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/amount"
+            android:background="@drawable/submit" />
+
+        <ImageButton
+            android:id="@+id/backMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/next"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dailygoalsmall" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.sfwhf1.WorkoutReport">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/walkText"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:hint="Walk"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop ="10dp"
+        android:layout_marginLeft="8dp"
+        />
+    <TextView
+        android:id="@+id/walkV"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="8dp"
+        android:textSize="20dp"
+        android:textAlignment="textEnd"
+        android:layout_alignBaseline="@+id/walkText"
+        android:layout_toEndOf="@+id/walkText" />
+
+    <TextView
+        android:id="@+id/runText"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_marginTop ="10dp"
+        android:layout_marginLeft="8dp"
+        android:hint="Run"
+        android:textSize="20dp"
+        android:layout_below="@+id/walkText"/>
+    <TextView
+        android:id="@+id/runV"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/runText"
+        android:layout_toEndOf="@+id/runText" />
+
+    <TextView
+        android:id="@+id/swimText"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_marginTop ="8dp"
+        android:layout_marginLeft="8dp"
+        android:hint="Swim"
+        android:layout_below="@+id/runV"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/swimV"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/swimText"
+        android:layout_toEndOf="@+id/swimText" />
+
+    <TextView
+        android:id="@+id/bikeText"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_marginTop ="8dp"
+        android:layout_marginLeft="8dp"
+        android:hint="Bike"
+        android:textSize="20dp"
+        android:layout_below="@+id/swimV"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/bikeV"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/bikeText"
+        android:layout_toEndOf="@+id/bikeText" />
+
+    <TextView
+        android:id="@+id/pushupText"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_margin ="8dp"
+        android:hint="Pushup"
+        android:textSize="20sp"
+        android:layout_below="@id/bikeV"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/pushupV"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/pushupText"
+        android:layout_toEndOf="@+id/pushupText" />
+
+    <TextView
+        android:id="@+id/crunchText"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_marginTop ="8dp"
+        android:layout_marginLeft="8dp"
+        android:hint="Crunch"
+        android:textSize="20dp"
+        android:layout_below="@+id/pushupV"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/crunchV"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/crunchText"
+        android:layout_toEndOf="@+id/crunchText" />
+
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_marginTop ="8dp"
+        android:layout_marginLeft="8dp"
+        android:hint="Weight Lifting"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/crunchV"
+        app:layout_constraintBottom_toTopOf="@+id/userInputV" />
+
+    <TextView
+        android:id="@+id/weightLV"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/weightText"
+        android:layout_toEndOf="@+id/weightText" />
+
+    <TextView
+        android:id="@+id/userInputText"
+        android:layout_width="200dp"
+        android:layout_height="34dp"
+        android:layout_marginTop ="8dp"
+        android:layout_marginLeft="8dp"
+        android:hint="User Input"
+        android:layout_below="@+id/weightLV"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/userInputV"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/userInputText"
+        android:layout_toEndOf="@+id/userInputText" />
+
+    <TextView
+        android:id="@+id/totalCalText"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/userInputV"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="Total Calories"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/totalCalV"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="8dp"
+        android:textAlignment="textEnd"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/totalCalText"
+        android:layout_toEndOf="@+id/totalCalText" />
+
+    <ImageButton
+        android:id="@+id/workoutMenu"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/totalCalV"
+        android:layout_margin="15dp"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/workoutmenu" />
+
+    <ImageButton
+        android:id="@+id/backMilog"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/totalCalV"
+        android:layout_margin="15dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/milogsmall" />
+
+
+
+  </RelativeLayout>
+
+</ScrollView>

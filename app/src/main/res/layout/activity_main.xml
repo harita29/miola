@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/grey"
+    tools:context="com.example.android.sfwhf1.Main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/buttonDailyVital"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dailyvitals"
+            />
+
+        <ImageButton
+            android:id="@+id/buttonIntakes"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/buttonDailyVital"
+            android:background="@drawable/intakebtn"
+            />
+         <ImageButton
+             android:id="@+id/buttonWorkout"
+             android:layout_width="match_parent"
+             android:layout_height="55dp"
+             android:layout_marginTop="15dp"
+             android:layout_below="@id/buttonIntakes"
+             android:background="@drawable/workoutlog"
+             />
+        <ImageButton
+            android:id="@+id/buttonMilog"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/buttonWorkout"
+            android:background="@drawable/milog"
+            />
+        <ImageButton
+            android:id="@+id/buttonGame"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/buttonMilog"
+            android:background="@drawable/game"
+            />
+        <ImageButton
+            android:id="@+id/buttonUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/buttonGame"
+            android:background="@drawable/profile"
+            />
+        <TextView
+            android:id="@+id/textViewSignout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sign out"
+            android:textAlignment="center"
+            android:layout_below="@+id/buttonUserProfile"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/deleteAccount"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Deactivate account"
+            android:textStyle="bold"
+            android:layout_below="@+id/textViewSignout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</ScrollView>
